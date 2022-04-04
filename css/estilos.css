@@ -4,6 +4,36 @@
 }
 html{
     font-size: 62.5%;
+}
+
+@keyframes fondoColor {
+    0% {
+        background-color: rgb(0,0,0);;
+    }
+    33% {
+        background-color: rgba(71, 63, 56, 0.732)
+    }
+    66%{
+        background-color: rgba(22, 26, 31, 0.732) 75%;
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/*tamaño desktop*/
+
+.body{
     font-family: 'Syne Mono', monospace;
     color: darkcyan;
     text-decoration: none;
@@ -13,82 +43,21 @@ html{
     animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-}
 
-@keyframes fondoColor {
-    0% {
-        background-color: rgb(0,0,0);;
-    }
-    33% {
-        background-color: rgba(240, 114, 11, 0.732)
-    }
-    66%{
-        background-color: rgba(66, 109, 165, 0.732) 75%;
-    }
-    100%{
-        background-color: rgb(119, 243, 202);
-    }
-}
-
-ul{
-    list-style-type: none;
-    list-style-position: none;
-}
-h1{
-    font-size: 5rem;
-    text-align: center;
-}
-h2{
-    font-size: 5rem;
-    text-align: center;
-}
-.logo{
-    margin: 10px; 
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; 
-}
-.body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 3fr 0.1fr;
-    grid-template-areas:
-    "h1"
-    "navegador"
-    "main"
-    "footer"
-}
-.h1{
-    grid-area: nombre;
 }
 .navegador{
-    grid-area: navegador;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: pieDePagina;
-}
-/*tamaño desktop*/
-.navegador{
-    border: 2px inset violet;
     padding: 5px;
     
 }
+
 .navegador ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-     
+    justify-content: space-evenly;  
 }
+
 .navegador li{
   display: inline-block;
   font-size: 2rem;
-  padding: 1px 1px; 
 }
 .navegador li a{
    text-decoration: none;
@@ -100,56 +69,18 @@ h2{
     color: red;
     
 }
-.imagenesAleatorias{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    grid-template-areas:
-    "imagenesAleatorias1"
-    "imagenesAleatorias2"
-    "imagenesAleatorias3"
-    ;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin: 10px;
-}
-.imagenesAleatorias1{
-    grid-area: imagenesAleatorias1;
+
+.presentacion{
+    display: flex;
     justify-items: center;
     align-items: center;
     margin: 10px;
-    width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 
 }   
-.imagenesAleatorias2{
-    grid-area: imagenesAleatorias2;
-    justify-items: center;
-    align-items: center;
-    margin: 10px;
-    width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.imagenesAleatorias3{
-    grid-area: imagenesAleatorias3;
-    justify-items: center;
-    align-items: center;
-    margin: 10px;
-    width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}    
+
 .productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -365,7 +296,7 @@ h2{
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .imagenesAleatorias{
+    .presentacion{
         border: 2px inset red;
         
     }
@@ -399,7 +330,7 @@ h2{
         flex-direction: column;
         align-items: center;
     }
-    .imagenesAleatorias{
+    .presentacion{
         border: 4px inset rgb(238, 223, 21);
         padding: 2px;
         margin: 2px
