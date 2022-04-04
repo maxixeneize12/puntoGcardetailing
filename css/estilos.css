@@ -47,7 +47,6 @@ h2{
 }
 .navegador{
     padding: 5px;
-    
 }
 
 .navegador ul{
@@ -66,8 +65,7 @@ h2{
 }
 .navegador li a:hover{
     font-size: 3rem;  
-    color: red;
-    
+    color: red;  
 }
 
 .presentacion{
@@ -78,168 +76,21 @@ h2{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
 }   
 
-.productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.1fr;
-    grid-template-areas:
-    "selladores-liquidos selladores-hibridos acondicionador-interior acondicionador-exterior"
-    "perfumes limpiadores shampoo ceras-carnuba"
-    ;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin: 10px;
-    
-}
-.selladores-liquidos{
-    grid-area: selladores-liquidos;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
+.carousel{
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    transition: width 2s;
-    
-}
-.selladores-liquidos:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-    transform: rotate(360deg);
-}
-.selladores-hibridos{
-    grid-area: selladores-hibridos;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 73%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.selladores-hibridos:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.acondicionador-interior{
-    grid-area: acondicionador-interior;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.acondicionador-interior:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.acondicionador-exterior{
-    grid-area: acondicionador-exterior;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 76%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.acondicionador-exterior:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.perfumes{
-    grid-area: perfumes;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 68%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.perfumes:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.limpiadores{
-    grid-area: limpiadores;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 70%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.limpiadores:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.shampoo{
-    grid-area: shampoo;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 70%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.shampoo:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.ceras-carnuba{
-    grid-area: ceras-carnuba;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.ceras-carnuba:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
 }
 .nosotros{
     margin: 10px; 
     font-size: 4rem;
     color: rgb(255, 255, 255);
     text-align: justify;
-    border: 2px inset darkorchid;
-    
+    border: 2px inset darkorchid;    
 }
+
 .contacto{
     display: flex;
     margin-left: 150px;
@@ -253,27 +104,33 @@ h2{
     font-size: 2rem;
     transition: all 1s;
 }
+
 .contacto input:focus{
     font-size: 4rem;
 }
+
 .contacto textarea{
     font-size: 2rem;
     transition: all 1s;
 }
+
 .contacto textarea:focus{
     font-size: 4rem;
 }
+
 .enviar{
     
     margin-left: auto;
     margin-right: auto;
     
 }
+
 .resetear{
     
     margin-left: auto;
     margin-right: auto;
 }
+
 .pieDePagina{
     margin: 10px;
     font-size: 2rem;
