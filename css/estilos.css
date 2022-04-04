@@ -1,74 +1,84 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
 @keyframes fondoColor {
     0% {
-        background-color: rgb(0,0,0);;
+        background-color: rgb(0, 0, 0);
+        ;
     }
+
     33% {
         background-color: rgba(71, 63, 56, 0.732)
     }
-    66%{
+
+    66% {
         background-color: rgba(22, 26, 31, 0.732) 75%;
     }
-    100%{
+
+    100% {
         background-color: rgb(0, 0, 0);
     }
 }
 
 
-h1{
+h1 {
     font-size: 5rem;
     text-align: center;
 }
-h2{
+
+h2 {
     font-size: 5rem;
     text-align: center;
 }
 
 /*tamaño desktop*/
 
-.body{
+.body {
     font-family: 'Syne Mono', monospace;
     color: darkcyan;
     text-decoration: none;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,39,73,0.7315301120448179) 75%, rgba(44,27,93,0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 39, 73, 0.7315301120448179) 75%, rgba(44, 27, 93, 0) 100%);
     animation-name: fondoColor;
     animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 
 }
-.navegador{
+
+.navegador {
     padding: 2rem;
+
 }
 
-.navegador ul{
+.navegador ul {
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
 
-.navegador li{
-  display: inline-block;
-  font-size: 2rem;
-}
-.navegador li a{
-   text-decoration: none;
-   color: whitesmoke;
-   transition: font-size 1s;
-}
-.navegador li a:hover{
-    font-size: 3rem;  
-    color: red;  
+.navegador li {
+    display: inline-block;
+    font-size: 2rem;
 }
 
-.presentacion{
+.navegador li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: font-size 1s;
+}
+
+.navegador li a:hover {
+    font-size: 3rem;
+    color: red;
+}
+
+.presentacion {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -76,31 +86,33 @@ h2{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}   
+}
 
-.carousel{
+.carousel {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-.nosotros{
+
+.nosotros {
     display: flex;
     flex: wrap;
-    margin: 10px; 
+    margin: 10px;
     font-size: 2rem;
-    color: rgb(238, 223, 21);
+    color: rgb(21 168 238 / 64%);
     text-align: justify;
-        
+
 }
 
-.imgNosotros{
+.imgNosotros {
     display: flex;
     align-items: center;
     margin: 10px;
     padding: 10px;
 
 }
-.contacto{
+
+.contacto {
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
@@ -109,172 +121,221 @@ h2{
     align-items: center;
 }
 
-.contacto input{
+.contacto input {
     font-size: 2rem;
     transition: all 1s;
 }
 
-.contacto input:focus{
+.contacto input:focus {
     font-size: 4rem;
 }
 
-.contacto textarea{
+.contacto textarea {
     font-size: 2rem;
     transition: all 1s;
 }
 
-.contacto textarea:focus{
+.contacto textarea:focus {
     font-size: 4rem;
 }
 
-.enviar{
-    
+.enviar {
+
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-.resetear{
-    
+.resetear {
+
     margin-left: auto;
     margin-right: auto;
 }
 
-.pieDePagina{
+.pieDePagina {
     margin: 10px;
     font-size: 2rem;
     text-align: center;
     color: darkcyan;
-    border: 2px inset darkorchid;
+    text-decoration: none;
+    
+    
 }
 
 /*tamaño tablet*/
 
-@media screen and (max-width: 768px){
-    .navegador{
-        border: 2px inset red;
-        padding: 5px;
+@media screen and (max-width: 768px) {
+   
+    .presentacion{
         display: flex;
-        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .navegador ul{
+
+    .navegador {
+        padding: 2rem;
+    }
+
+    .navegador ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        align-items: center;
     }
-    .presentacion{
-        border: 2px inset red;
-        
+
+    .navegador li {
+        display: inline-block;
+        font-size: 2rem;
     }
-    .contacto input{
+
+    .navegador li a {
+        text-decoration: none;
+        color: whitesmoke;
+        transition: font-size 1s;
+    }
+
+    .navegador li a:hover {
+        font-size: 3rem;
+        color: red;
+    }
+
+    .contacto {
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto input {
         font-size: 2rem;
         transition: none;
     }
-    .contacto input:focus{
+
+    .contacto input:focus {
         font-size: 4rem;
     }
-    .contacto textarea{
+
+    .contacto textarea {
         font-size: 2rem;
         transition: none;
     }
-    .contacto textarea:focus{
+
+    .contacto textarea:focus {
         font-size: 4rem;
+    }
+
+    .pieDePagina {
+        margin: 10px;
+        font-size: 2rem;
+        text-align: center;
+        color: darkcyan;
+        border: 2px inset darkorchid;
     }
 }
 
-/*tamaño celular*/
-@media screen and (max-width: 500px){
 
-    .navegador{
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px;
-        
+/*tamaño celular*/
+@media screen and (max-width: 500px) {
+    
+    .presentacion{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .navegador ul{
+    .navegador {
+        padding: 2rem;
+    }
+
+    .navegador ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .presentacion{
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
+
+    .navegador li {
+        display: inline-block;
+        font-size: 2rem;
     }
 
-    .productos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr;
-        grid-template-areas:
-        "selladores-liquidos" 
-        "selladores-hibridos"
-        "acondicionador-interior" 
-        "acondicionador-exterior"
-        "perfumes" 
-        "limpiadores" 
-        "shampoo" 
-        "ceras-carnuba"
-        ;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+    .navegador li a {
+        text-decoration: none;
+        color: whitesmoke;
+        transition: font-size 1s;
+    }
+
+    .navegador li a:hover {
+        font-size: 3rem;
+        color: red;
+    }
+    
+    .nosotros {
+        display: flex;
+        flex-direction: column;
         margin: 10px;
-        justify-items: center;
+        font-size: 2rem;
+        color: rgb(21 168 238 / 64%);
+        text-align: column;
+        align-items: center;
     }
-    .selladores-liquidos{
-        grid-area: selladores-liquidos;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-               
-    }
-    .selladores-hibridos{
-        grid-area: selladores-hibridos;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
-    }
-    .acondicionador-interior{
-        grid-area: acondicionador-interior;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-      
-    }
-    .acondicionador-exterior{
-        grid-area: acondicionador-exterior;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-        
-    }
-    .perfumes{
-        grid-area: perfumes;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-        
-    }
-    .limpiadores{
-        grid-area: limpiadores;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
-    }
-    .shampoo{
-        grid-area: shampoo;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
-    }
-    .ceras-carnuba{
-        grid-area: ceras-carnuba;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px;
+    
+    .imgNosotros {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
     }
 
+    .contacto {
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto input {
+        font-size: 1rem;
+        transition: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto input:focus {
+        font-size: 2rem;
+    }
+
+    .contacto textarea {
+        font-size: 1rem;
+        transition: none;
+    }
+
+    .contacto textarea:focus {
+        font-size: 2rem;
+    }
+    .enviar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .resetear {
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+    .pieDePagina {
+        margin: 40px;
+        font-size: 1rem;
+        text-align: center;
+        color: darkcyan;
+        
+    }
 }
