@@ -43,29 +43,15 @@ h2 {
     font-family: 'Syne Mono', monospace;
     color: darkcyan;
     text-decoration: none;
-<<<<<<< HEAD
     
     animation-name: fondoColor;
     animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-=======
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 39, 73, 0.7315301120448179) 75%, rgba(44, 27, 93, 0) 100%);
-    animation-name: fondoColor;
-    animation-duration: 4s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
 }
 
 .navegador {
     padding: 2rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
 }
 
 .navegador ul {
@@ -95,20 +81,16 @@ h2 {
     align-items: center;
     margin: 10px;
     width: 80%;
-<<<<<<< HEAD
     margin-left: auto;
     margin-right: auto;
 }
 
 .carousel {
     width: 35%;
-=======
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     margin-left: auto;
     margin-right: auto;
 }
 
-<<<<<<< HEAD
 .nosotros {
     display: flex;
     text-align: center;
@@ -126,34 +108,11 @@ h2 {
 }
 
 .main {
-=======
-.carousel {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nosotros {
-    display: flex;
-    flex: wrap;
-    margin: 10px;
-    font-size: 2rem;
-    color: rgb(21 168 238 / 64%);
-    text-align: justify;
-
-}
-
-.imgNosotros {
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     display: flex;
     align-items: center;
     margin: 10px;
     padding: 10px;
-<<<<<<< HEAD
     flex-direction: column;
-=======
-
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
 }
 
 .contacto {
@@ -184,7 +143,6 @@ h2 {
 }
 
 .enviar {
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
 }
@@ -192,18 +150,6 @@ h2 {
 .resetear {
     display: flex;
     justify-content: center;
-=======
-
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.resetear {
-
-    margin-left: auto;
-    margin-right: auto;
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
 }
 
 .pieDePagina {
@@ -212,7 +158,6 @@ h2 {
     text-align: center;
     color: darkcyan;
     text-decoration: none;
-<<<<<<< HEAD
 }
 
 .instagram {
@@ -223,61 +168,17 @@ h2 {
 .whatsapp {
     text-decoration: none;
     color: whitesmoke;
-=======
-    
-    
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
 }
 
 /*tamaño tablet*/
 
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
 
     .carousel {
         width: 35%;
     }
 
     .contacto {
-=======
-   
-    .presentacion{
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        margin: 10px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navegador {
-        padding: 2rem;
-    }
-
-    .navegador ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .navegador li {
-        display: inline-block;
-        font-size: 2rem;
-    }
-
-    .navegador li a {
-        text-decoration: none;
-        color: whitesmoke;
-        transition: font-size 1s;
-    }
-
-    .navegador li a:hover {
-        font-size: 3rem;
-        color: red;
-    }
-
-    .contacto {
         display: flex;
         margin-left: 150px;
         margin-right: 150px;
@@ -286,61 +187,6 @@ h2 {
         align-items: center;
     }
 
-    .contacto input {
-        font-size: 2rem;
-        transition: none;
-    }
-
-    .contacto input:focus {
-        font-size: 4rem;
-    }
-
-    .contacto textarea {
-        font-size: 2rem;
-        transition: none;
-    }
-
-    .contacto textarea:focus {
-        font-size: 4rem;
-    }
-
-    .pieDePagina {
-        margin: 10px;
-        font-size: 2rem;
-        text-align: center;
-        color: darkcyan;
-        border: 2px inset darkorchid;
-    }
-}
-
-
-/*tamaño celular*/
-@media screen and (max-width: 500px) {
-    
-    .presentacion{
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        margin: 10px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navegador {
-        padding: 2rem;
-    }
-
-    .navegador ul {
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
-        display: flex;
-        margin-left: 150px;
-        margin-right: 150px;
-        font-size: 2rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-<<<<<<< HEAD
     .contacto input {
         font-size: 2rem;
         transition: none;
@@ -421,41 +267,6 @@ h2 {
         padding: 10px;
     }
 
-=======
-    .navegador li {
-        display: inline-block;
-        font-size: 2rem;
-    }
-
-    .navegador li a {
-        text-decoration: none;
-        color: whitesmoke;
-        transition: font-size 1s;
-    }
-
-    .navegador li a:hover {
-        font-size: 3rem;
-        color: red;
-    }
-    
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        font-size: 2rem;
-        color: rgb(21 168 238 / 64%);
-        text-align: column;
-        align-items: center;
-    }
-    
-    .imgNosotros {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-        padding: 10px;
-    }
-
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     .contacto {
         display: flex;
         margin-left: 150px;
@@ -464,10 +275,6 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     .contacto input {
         font-size: 1rem;
         transition: none;
@@ -487,38 +294,19 @@ h2 {
     .contacto textarea:focus {
         font-size: 2rem;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     .enviar {
         margin-left: auto;
         margin-right: auto;
     }
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     .resetear {
         margin-left: auto;
         margin-right: auto;
     }
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     .pieDePagina {
         margin: 40px;
         font-size: 1rem;
         text-align: center;
-<<<<<<< HEAD
         color: whitesmoke;
 
-=======
-        color: darkcyan;
-        
->>>>>>> d9177b0b1df67ade54f96b0552390552e83a7bdc
     }
 }
