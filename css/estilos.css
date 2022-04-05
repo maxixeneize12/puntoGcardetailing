@@ -43,7 +43,6 @@ h2 {
     font-family: 'Syne Mono', monospace;
     color: darkcyan;
     text-decoration: none;
-    
     animation-name: fondoColor;
     animation-duration: 5s;
     animation-timing-function: ease-out;
