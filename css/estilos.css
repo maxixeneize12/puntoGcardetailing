@@ -10,17 +10,13 @@ html {
 @keyframes fondoColor {
     0% {
         background-color: rgb(0, 0, 0);
-        ;
     }
-
     33% {
-        background-color: rgba(71, 63, 56, 0.732)
+        background-color: rgba(71, 63, 56, 0.732);
     }
-
     66% {
         background-color: rgba(22, 26, 31, 0.732) 75%;
     }
-
     100% {
         background-color: rgb(0, 0, 0);
     }
@@ -37,42 +33,41 @@ h2 {
     text-align: center;
 }
 
+
 /*tamaño desktop*/
 
 .body {
     font-family: 'Syne Mono', monospace;
-    color: darkcyan;
+    color: whitesmoke;
     text-decoration: none;
     animation-name: fondoColor;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
+/*navegador*/
 .navegador {
     padding: 2rem;
 }
-
 .navegador ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 .navegador li {
     display: inline-block;
     font-size: 2rem;
 }
-
 .navegador li a {
     text-decoration: none;
     color: whitesmoke;
     transition: font-size 1s;
 }
-
 .navegador li a:hover {
     font-size: 3rem;
     color: red;
 }
+/*imagen presentacioninicio*/
 
 .presentacion {
     display: flex;
@@ -84,6 +79,7 @@ h2 {
     margin-right: auto;
 }
 
+/*carousel-productos*/
 .carousel {
     width: 35%;
     margin-left: auto;
@@ -218,29 +214,55 @@ h2 {
 
 @media screen and (max-width: 500px) {
 
-    
-    .carousel {
-        width: 80%;
+    @keyframes fondoColor {
+        0% {
+            background-color: rgb(9, 87, 151);
+        }
+        33% {
+            background-color: rgba(22, 42, 214, 0.732);
+        }
+        66% {
+            background-color: rgba(13, 112, 233, 0.732) 75%;
+        }
+        100% {
+            background-color: rgb(25, 122, 160);
+        }
     }
+    .body{
+    animation-name: fondoColor;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 
-    .presentacion {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        margin: 10px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
+    /*navegador*/
 
+    .navegador {
+        padding: 1rem 1rem 0rem 1rem;
+    }
     .navegador ul {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navegador li {
         font-size: 1rem;
+        margin: 2px
     }
+    /*imagen presentacion-inicio*/
+
+    .presentacion {
+        width: 100%;
+        transform: translateY(10px);
+    }
+
+    /*carousel-productos*/
+    .carousel {
+        width: 80%;
+    }
+
+    
+                    
 
     .nosotros {
         display: flex;
@@ -294,8 +316,13 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .relleno{
+        display: flex;
+        height: 30px;
+    }
     .pieDePagina {
-        margin: 40px;
+        margin: 10px;
         font-size: 1rem;
         text-align: center;
         color: whitesmoke;
