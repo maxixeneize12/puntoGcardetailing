@@ -1,315 +1,121 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-html{
+
+html {
     font-size: 62.5%;
-    font-family: 'Syne Mono', monospace;
-    color: darkcyan;
-    text-decoration: none;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,39,73,0.7315301120448179) 75%, rgba(44,27,93,0) 100%);
-    animation-name: fondoColor;
-    animation-duration: 4s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
 }
 
 @keyframes fondoColor {
     0% {
-        background-color: rgb(0,0,0);;
+        background-color: rgb(0, 0, 0);
+        ;
     }
+
     33% {
-        background-color: rgba(240, 114, 11, 0.732)
+        background-color: rgba(71, 63, 56, 0.732)
     }
-    66%{
-        background-color: rgba(66, 109, 165, 0.732) 75%;
+
+    66% {
+        background-color: rgba(22, 26, 31, 0.732) 75%;
     }
-    100%{
-        background-color: rgb(119, 243, 202);
+
+    100% {
+        background-color: rgb(0, 0, 0);
     }
 }
 
-ul{
-    list-style-type: none;
-    list-style-position: none;
-}
-h1{
+
+h1 {
     font-size: 5rem;
     text-align: center;
 }
-h2{
+
+h2 {
     font-size: 5rem;
     text-align: center;
 }
-.logo{
-    margin: 10px; 
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; 
-}
-.body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 3fr 0.1fr;
-    grid-template-areas:
-    "h1"
-    "navegador"
-    "main"
-    "footer"
-}
-.h1{
-    grid-area: nombre;
-}
-.navegador{
-    grid-area: navegador;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: pieDePagina;
-}
+
 /*tamaño desktop*/
-.navegador{
-    border: 2px inset violet;
-    padding: 5px;
-    
-}
-.navegador ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-     
-}
-.navegador li{
-  display: inline-block;
-  font-size: 2rem;
-  padding: 1px 1px; 
-}
-.navegador li a{
-   text-decoration: none;
-   color: aquamarine;
-   transition: font-size 1s;
-}
-.navegador li a:hover{
-    font-size: 3rem;  
-    color: red;
-    
-}
-.imagenesAleatorias{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    grid-template-areas:
-    "imagenesAleatorias1"
-    "imagenesAleatorias2"
-    "imagenesAleatorias3"
-    ;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin: 10px;
-}
-.imagenesAleatorias1{
-    grid-area: imagenesAleatorias1;
-    justify-items: center;
-    align-items: center;
-    margin: 10px;
-    width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
-}   
-.imagenesAleatorias2{
-    grid-area: imagenesAleatorias2;
+.body {
+    font-family: 'Syne Mono', monospace;
+    color: darkcyan;
+    text-decoration: none;
+    
+    animation-name: fondoColor;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.navegador {
+    padding: 2rem;
+}
+
+.navegador ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navegador li {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.navegador li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: font-size 1s;
+}
+
+.navegador li a:hover {
+    font-size: 3rem;
+    color: red;
+}
+
+.presentacion {
+    display: flex;
     justify-items: center;
     align-items: center;
     margin: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel {
     width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.imagenesAleatorias3{
-    grid-area: imagenesAleatorias3;
-    justify-items: center;
+
+.nosotros {
+    display: flex;
+    text-align: center;
+    flex: wrap;
+    margin: 120px;
+    font-size: 2rem;
+    color: rgb(21 168 238 / 64%);
+}
+
+.imgNosotros {
+    display: flex;
     align-items: center;
     margin: 10px;
-    width: 35%;
-    padding: 10px ;
-    border: 2px inset violet;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}    
-.productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.1fr;
-    grid-template-areas:
-    "selladores-liquidos selladores-hibridos acondicionador-interior acondicionador-exterior"
-    "perfumes limpiadores shampoo ceras-carnuba"
-    ;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    padding: 10px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
     margin: 10px;
-    
+    padding: 10px;
+    flex-direction: column;
 }
-.selladores-liquidos{
-    grid-area: selladores-liquidos;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-    
-}
-.selladores-liquidos:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-    transform: rotate(360deg);
-}
-.selladores-hibridos{
-    grid-area: selladores-hibridos;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 73%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.selladores-hibridos:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.acondicionador-interior{
-    grid-area: acondicionador-interior;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.acondicionador-interior:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.acondicionador-exterior{
-    grid-area: acondicionador-exterior;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 76%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.acondicionador-exterior:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.perfumes{
-    grid-area: perfumes;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 68%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.perfumes:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.limpiadores{
-    grid-area: limpiadores;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 70%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.limpiadores:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.shampoo{
-    grid-area: shampoo;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 70%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.shampoo:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.ceras-carnuba{
-    grid-area: ceras-carnuba;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-    width: 75%;
-    padding: 25px ;
-    border: 2px inset violet;
-    margin-left: auto;
-    margin-right: auto;
-    transition: width 2s;
-}
-.ceras-carnuba:hover{
-    width: 100%;
-    padding: 2px ;
-    border: 5px inset cyan;
-}
-.nosotros{
-    margin: 10px; 
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    border: 2px inset darkorchid;
-    
-}
-.contacto{
+
+.contacto {
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
@@ -318,166 +124,193 @@ h2{
     align-items: center;
 }
 
-.contacto input{
+.contacto input {
     font-size: 2rem;
     transition: all 1s;
 }
-.contacto input:focus{
+
+.contacto input:focus {
     font-size: 4rem;
 }
-.contacto textarea{
+
+.contacto textarea {
     font-size: 2rem;
     transition: all 1s;
 }
-.contacto textarea:focus{
+
+.contacto textarea:focus {
     font-size: 4rem;
 }
-.enviar{
-    
-    margin-left: auto;
-    margin-right: auto;
-    
+
+.enviar {
+    display: flex;
+    justify-content: center;
 }
-.resetear{
-    
-    margin-left: auto;
-    margin-right: auto;
+
+.resetear {
+    display: flex;
+    justify-content: center;
 }
-.pieDePagina{
+
+.pieDePagina {
     margin: 10px;
     font-size: 2rem;
     text-align: center;
     color: darkcyan;
-    border: 2px inset darkorchid;
+    text-decoration: none;
+}
+
+.instagram {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.whatsapp {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 /*tamaño tablet*/
 
-@media screen and (max-width: 768px){
-    .navegador{
-        border: 2px inset red;
-        padding: 5px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .navegador ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .imagenesAleatorias{
-        border: 2px inset red;
-        
-    }
-    .contacto input{
-        font-size: 2rem;
-        transition: none;
-    }
-    .contacto input:focus{
-        font-size: 4rem;
-    }
-    .contacto textarea{
-        font-size: 2rem;
-        transition: none;
-    }
-    .contacto textarea:focus{
-        font-size: 4rem;
-    }
-}
+@media screen and (max-width: 768px) {
 
-/*tamaño celular*/
-@media screen and (max-width: 500px){
-
-    .navegador{
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px;
-        
+    .carousel {
+        width: 35%;
     }
-    .navegador ul{
+
+    .contacto {
         display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 2rem;
         flex-direction: column;
         align-items: center;
     }
-    .imagenesAleatorias{
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
+
+    .contacto input {
+        font-size: 2rem;
+        transition: none;
     }
 
-    .productos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr;
-        grid-template-areas:
-        "selladores-liquidos" 
-        "selladores-hibridos"
-        "acondicionador-interior" 
-        "acondicionador-exterior"
-        "perfumes" 
-        "limpiadores" 
-        "shampoo" 
-        "ceras-carnuba"
-        ;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+    .contacto input:focus {
+        font-size: 4rem;
+    }
+
+    .contacto textarea {
+        font-size: 2rem;
+        transition: none;
+    }
+
+    .contacto textarea:focus {
+        font-size: 4rem;
+    }
+
+    .pieDePagina {
         margin: 10px;
-        justify-items: center;
+        font-size: 2rem;
+        text-align: center;
+        color: whitesmoke;
+
     }
-    .selladores-liquidos{
-        grid-area: selladores-liquidos;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-               
+}
+
+
+/*tamaño celular*/
+@media screen and (max-width: 500px) {
+
+    
+    .body{
+        background-image: url(../imagen/LOGOCELU.png);
     }
-    .selladores-hibridos{
-        grid-area: selladores-hibridos;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
+    .navegador ul {
+        display: flex;
+        justify-content:initial;
     }
-    .acondicionador-interior{
-        grid-area: acondicionador-interior;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-      
-    }
-    .acondicionador-exterior{
-        grid-area: acondicionador-exterior;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
         
-    }
-    .perfumes{
-        grid-area: perfumes;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-        
-    }
-    .limpiadores{
-        grid-area: limpiadores;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
-    }
-    .shampoo{
-        grid-area: shampoo;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px
-       
-    }
-    .ceras-carnuba{
-        grid-area: ceras-carnuba;
-        border: 4px inset rgb(238, 223, 21);
-        padding: 2px;
-        margin: 2px;
+    .carousel {
+        width: 80%;
     }
 
+    .presentacion {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navegador ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navegador li {
+        font-size: 1rem;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        font-size: 2rem;
+        color: rgb(21 168 238 / 64%);
+        text-align: column;
+        align-items: center;
+    }
+
+    .imgNosotros {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .contacto {
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto input {
+        font-size: 1rem;
+        transition: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto input:focus {
+        font-size: 2rem;
+    }
+
+    .contacto textarea {
+        font-size: 1rem;
+        transition: none;
+    }
+
+    .contacto textarea:focus {
+        font-size: 2rem;
+    }
+
+    .enviar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .resetear {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pieDePagina {
+        margin: 40px;
+        font-size: 1rem;
+        text-align: center;
+        color: whitesmoke;
+
+    }
 }
