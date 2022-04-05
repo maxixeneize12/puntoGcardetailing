@@ -215,17 +215,10 @@ h2 {
 
 
 /*tamaño celular*/
+
 @media screen and (max-width: 500px) {
 
     
-    .body{
-        background-image: url(../imagen/LOGOCELU.png);
-    }
-    .navegador ul {
-        display: flex;
-        justify-content:initial;
-    }
-        
     .carousel {
         width: 80%;
     }
