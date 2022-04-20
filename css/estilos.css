@@ -8,10 +8,8 @@ html {
 @keyframes fondoColor {
   0% {
     background-color: black; }
-  33% {
-    background-color: rgba(71, 63, 56, 0.732); }
-  66% {
-    background-color: rgba(22, 26, 31, 0.732) 75%; }
+  50% {
+    background-color: grey; }
   100% {
     background-color: #7c7979; } }
 
@@ -107,29 +105,131 @@ h2 {
   margin: 1px; }
 
 .navegador {
-  padding: 2rem;
-  position: relative;
-  z-index: 121; }
-  .navegador ul {
-    display: flex;
-    justify-content: space-evenly; }
-  .navegador li {
-    display: inline-block;
+  padding: 3rem;
+  z-index: 121;
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+  flex-direction: row; }
+  .navegador .navbar-brand {
+    padding-top: 0%;
+    padding-bottom: 0%; }
+  .navegador .navbar-toggler {
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: whitesmoke; }
+  .navegador a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: whitesmoke; }
+    .navegador a:hover {
+      color: red; }
+  .navegador .collapse {
     font-size: 2rem; }
-    .navegador li a {
-      text-decoration: none;
-      color: whitesmoke;
-      transition: font-size 1s; }
-      .navegador li a:hover {
-        font-size: 3rem;
-        color: red; }
+    .navegador .collapse .navbar-nav li {
+      font-size: 2rem; }
+      .navegador .collapse .navbar-nav li a {
+        text-decoration: none;
+        color: whitesmoke; }
+        .navegador .collapse .navbar-nav li a:hover {
+          color: red; }
 
-.main {
+.presentacion1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.img-presentacion2 {
   display: flex;
   align-items: center;
+  font-size: 4rem;
+  text-align: center; }
+
+.ingresa {
+  color: #06a006; }
+  .ingresa:hover {
+    color: red; }
+
+.galeria-catalogo {
   margin: 10px;
-  padding: 10px;
-  flex-direction: column; }
+  padding: 50px; }
+
+.cera {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .cera:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.limpiadores {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .limpiadores:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.llantas {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .llantas:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.perfumes {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .perfumes:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.quik-detail {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .quik-detail:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.shampoo {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .shampoo:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.interiores {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .interiores:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 10px;
+  justify-content: center; }
+
+.nosotros {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  color: whitesmoke; }
 
 .pieDePagina {
   margin: 10px;
@@ -145,6 +245,7 @@ h2 {
 .whatsapp {
   text-decoration: none;
   color: whitesmoke; }
+<<<<<<< HEAD
 
 .presentacion {
   display: flex;
@@ -282,3 +383,5 @@ h2 {
   .pieDePagina {
     font-size: 1rem;
     color: whitesmoke; } }
+=======
+>>>>>>> 4c13d3aca067dbe41d9ea51cfa4f944833c3f4ac
