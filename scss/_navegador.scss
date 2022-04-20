@@ -1,0 +1,25 @@
+.navegador {
+    padding: 2rem;
+    position: relative;
+    z-index: 121;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 2rem;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            transition: font-size 1s;
+
+            &:hover {
+                font-size: 3rem;
+                color: red;
+            }
+        }
+    }
+}

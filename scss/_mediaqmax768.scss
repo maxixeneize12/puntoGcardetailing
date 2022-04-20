@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+
+    .carousel {
+        width: 35%;
+    }
+
+    .nosotros {
+        flex-direction: row;
+        margin: 10px;
+        font-size: 1.5rem;
+        text-align: end;
+        color: #0fa5eb;
+         
+    }
+
+    .contacto {
+        font-size: 2rem;
+            
+        input {
+            transition: none;
+        }
+
+        textarea {
+            font-size: 2rem;
+            transition: none;
+        
+            :focus {
+                font-size: 4rem;
+            }
+        }
+    }
+    
+    
+    .pieDePagina {
+        margin: 10px;
+        font-size: 2rem;
+        text-align: center;
+        color: whitesmoke;
+    }
+}

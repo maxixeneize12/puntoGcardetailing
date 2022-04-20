@@ -1,0 +1,10 @@
+Modificaciones en el SEO
+
+1. Se agregó "map-get" a los "h2".
+2. Se agregó "extend" a los botones "enviar" y "resetar" de la pagina de contactos.
+3. Se agregó "mixin" a la pagina "nosotros" y al "footer" (pie de pagina).
+4. Se agregó "keyboards" y "content" a todas las páginas.
+5. Se agregó "description" y "content" en todas las páginas.
+6. Se agregó <title> a todas las páginas.
+7. Se agregó "enbcabezado" a todas las páginas con efectos de animación.
+8. Se agregó "alt=""" en las imagenes de la pagina de "productos".

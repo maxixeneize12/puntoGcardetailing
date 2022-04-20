@@ -13,7 +13,7 @@ html {
   66% {
     background-color: rgba(22, 26, 31, 0.732) 75%; }
   100% {
-    background-color: black; } }
+    background-color: #7c7979; } }
 
 h1 {
   font-size: 5rem;
@@ -28,9 +28,83 @@ body {
   color: whitesmoke;
   text-decoration: none;
   animation-name: fondoColor;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite; }
+
+/*condicionales IF*/
+html {
+  background: linear-gradient(329deg, #1900f7 0%, #fdbb2d 100%); }
+
+/*bucles*/
+.imgNosotros-1 {
+  width: 35%; }
+
+.imgNosotros-2 {
+  width: 70%; }
+
+.imgNosotros-3 {
+  width: 105%; }
+
+.imgNosotros-4 {
+  width: 140%; }
+
+.imgNosotros-5 {
+  width: 175%; }
+
+/*each*/
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+/*maps*/
+.instagram {
+  background-color: #f30ce0; }
+
+.whatsapp {
+  background-color: #0bf503; }
+
+/*maps get*/
+h2 {
+  background-color: blue;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px; }
+
+/*extend*/
+.enviar, .resetear {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.enviar {
+  background: #0327f3;
+  color: yellow; }
+
+.resetear {
+  background: #fbff00;
+  color: black; }
+
+/*mixins*/
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: initial; }
+
+.pieDePagina {
+  height: 50px;
+  width: 500px;
+  padding: 2px;
+  margin: 1px; }
 
 .navegador {
   padding: 2rem;
@@ -109,15 +183,9 @@ body {
   flex-direction: column;
   align-items: center; }
   .contacto input {
-    font-size: 2rem;
-    transition: all 1s; }
-    .contacto input:focus {
-      font-size: 4rem; }
+    font-size: 2rem; }
   .contacto textarea {
-    font-size: 2rem;
-    transition: all 1s; }
-    .contacto textarea:focus {
-      font-size: 4rem; }
+    font-size: 2rem; }
 
 .enviar {
   display: flex;
