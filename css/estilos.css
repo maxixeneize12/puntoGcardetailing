@@ -30,6 +30,7 @@ body {
   animation-timing-function: ease-out;
   animation-iteration-count: infinite; }
 
+<<<<<<< HEAD
 /*condicionales IF*/
 html {
   background: linear-gradient(329deg, #1900f7 0%, #fdbb2d 100%); }
@@ -134,6 +135,38 @@ h2 {
         .navegador .collapse .navbar-nav li a:hover {
           color: red; }
 
+=======
+.navegador {
+  padding: 3rem;
+  z-index: 121;
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+  flex-direction: row; }
+  .navegador .navbar-brand {
+    padding-top: 0%;
+    padding-bottom: 0%; }
+  .navegador .navbar-toggler {
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: whitesmoke; }
+  .navegador a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: whitesmoke; }
+    .navegador a:hover {
+      color: red; }
+  .navegador .collapse {
+    font-size: 2rem; }
+    .navegador .collapse .navbar-nav li {
+      font-size: 2rem; }
+      .navegador .collapse .navbar-nav li a {
+        text-decoration: none;
+        color: whitesmoke; }
+        .navegador .collapse .navbar-nav li a:hover {
+          color: red; }
+
+>>>>>>> refs/remotes/origin/main
 .presentacion1 {
   display: flex;
   justify-content: center;
@@ -245,6 +278,7 @@ h2 {
 .whatsapp {
   text-decoration: none;
   color: whitesmoke; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 .presentacion {
@@ -385,3 +419,5 @@ h2 {
     color: whitesmoke; } }
 =======
 >>>>>>> 4c13d3aca067dbe41d9ea51cfa4f944833c3f4ac
+=======
+>>>>>>> refs/remotes/origin/main
