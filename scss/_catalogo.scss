@@ -1,0 +1,90 @@
+.galeria-catalogo {
+    
+    margin: 10px;
+    padding: 50px;
+}
+
+.cera {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+        
+    }
+}
+
+.limpiadores {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}
+
+.llantas {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}
+
+.perfumes {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}
+
+.quik-detail {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}
+
+.shampoo {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}
+
+.interiores {
+    width: 40%;
+    border: 2px inset violet;
+    transition: width 2s;
+
+    &:hover  {
+        width: 50%;
+        padding: 2px;
+        border: 5px inset cyan;
+    }
+}

@@ -1,5 +1,10 @@
 @media screen and (max-width: 768px) {
 
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .carousel {
         width: 35%;
     }
@@ -9,7 +14,7 @@
         margin: 10px;
         font-size: 1.5rem;
         text-align: end;
-        color: #0fa5eb;
+        color: whitesmoke
          
     }
 

@@ -8,12 +8,10 @@ html {
 @keyframes fondoColor {
   0% {
     background-color: black; }
-  33% {
-    background-color: rgba(71, 63, 56, 0.732); }
-  66% {
-    background-color: rgba(22, 26, 31, 0.732) 75%; }
+  50% {
+    background-color: grey; }
   100% {
-    background-color: #7c7979; } }
+    background-color: black; } }
 
 h1 {
   font-size: 5rem;
@@ -32,104 +30,132 @@ body {
   animation-timing-function: ease-out;
   animation-iteration-count: infinite; }
 
-/*condicionales IF*/
-html {
-  background: linear-gradient(329deg, #1900f7 0%, #fdbb2d 100%); }
-
-/*bucles*/
-.imgNosotros-1 {
-  width: 35%; }
-
-.imgNosotros-2 {
-  width: 70%; }
-
-.imgNosotros-3 {
-  width: 105%; }
-
-.imgNosotros-4 {
-  width: 140%; }
-
-.imgNosotros-5 {
-  width: 175%; }
-
-/*each*/
-.red {
-  color: red; }
-
-.blue {
-  color: blue; }
-
-.yellow {
-  color: yellow; }
-
-/*maps*/
-.instagram {
-  background-color: #f30ce0; }
-
-.whatsapp {
-  background-color: #0bf503; }
-
-/*maps get*/
-h2 {
-  background-color: blue;
-  text-align: center;
-  padding: 1rem;
-  font-size: 35px; }
-
-/*extend*/
-.enviar, .resetear {
-  width: 200px;
-  height: 50px;
-  background-color: red;
-  text-align: center;
-  color: whitesmoke;
-  border-radius: 20px;
-  border: 1px solid black; }
-
-.enviar {
-  background: #0327f3;
-  color: yellow; }
-
-.resetear {
-  background: #fbff00;
-  color: black; }
-
-/*mixins*/
-.nosotros {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: initial; }
-
-.pieDePagina {
-  height: 50px;
-  width: 500px;
-  padding: 2px;
-  margin: 1px; }
-
 .navegador {
-  padding: 2rem;
-  position: relative;
-  z-index: 121; }
-  .navegador ul {
-    display: flex;
-    justify-content: space-evenly; }
-  .navegador li {
-    display: inline-block;
+  padding: 3rem;
+  z-index: 121;
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+  flex-direction: row; }
+  .navegador .navbar-brand {
+    padding-top: 0%;
+    padding-bottom: 0%; }
+  .navegador .navbar-toggler {
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: whitesmoke; }
+  .navegador a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: whitesmoke; }
+    .navegador a:hover {
+      color: red; }
+  .navegador .collapse {
     font-size: 2rem; }
-    .navegador li a {
-      text-decoration: none;
-      color: whitesmoke;
-      transition: font-size 1s; }
-      .navegador li a:hover {
-        font-size: 3rem;
-        color: red; }
+    .navegador .collapse .navbar-nav li {
+      font-size: 2rem; }
+      .navegador .collapse .navbar-nav li a {
+        text-decoration: none;
+        color: whitesmoke; }
+        .navegador .collapse .navbar-nav li a:hover {
+          color: red; }
 
-.main {
+.presentacion1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.img-presentacion2 {
   display: flex;
   align-items: center;
+  font-size: 4rem;
+  text-align: center; }
+
+.ingresa {
+  color: #06a006; }
+  .ingresa:hover {
+    color: red; }
+
+.galeria-catalogo {
   margin: 10px;
-  padding: 10px;
-  flex-direction: column; }
+  padding: 50px; }
+
+.cera {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .cera:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.limpiadores {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .limpiadores:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.llantas {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .llantas:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.perfumes {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .perfumes:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.quik-detail {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .quik-detail:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.shampoo {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .shampoo:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.interiores {
+  width: 40%;
+  border: 2px inset violet;
+  transition: width 2s; }
+  .interiores:hover {
+    width: 50%;
+    padding: 2px;
+    border: 5px inset cyan; }
+
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 10px;
+  justify-content: center; }
+
+.nosotros {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  color: whitesmoke; }
 
 .pieDePagina {
   margin: 10px;
@@ -145,140 +171,3 @@ h2 {
 .whatsapp {
   text-decoration: none;
   color: whitesmoke; }
-
-.presentacion {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: 10px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(-100px); }
-
-.carousel {
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.nosotros {
-  display: flex;
-  text-align: center;
-  flex: wrap;
-  margin: 120px;
-  font-size: 2rem;
-  color: whitesmoke; }
-
-.imgNosotros {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  padding: 10px; }
-
-.contacto {
-  display: flex;
-  margin-left: 150px;
-  margin-right: 150px;
-  font-size: 3rem;
-  flex-direction: column;
-  align-items: center; }
-  .contacto input {
-    font-size: 2rem; }
-  .contacto textarea {
-    font-size: 2rem; }
-
-.enviar {
-  display: flex;
-  justify-content: center; }
-
-.resetear {
-  display: flex;
-  justify-content: center; }
-
-@media screen and (max-width: 768px) {
-  .carousel {
-    width: 35%; }
-  .nosotros {
-    flex-direction: row;
-    margin: 10px;
-    font-size: 1.5rem;
-    text-align: end;
-    color: #0fa5eb; }
-  .contacto {
-    font-size: 2rem; }
-    .contacto input {
-      transition: none; }
-    .contacto textarea {
-      font-size: 2rem;
-      transition: none; }
-      .contacto textarea :focus {
-        font-size: 4rem; }
-  .pieDePagina {
-    margin: 10px;
-    font-size: 2rem;
-    text-align: center;
-    color: whitesmoke; } }
-
-@media screen and (max-width: 500px) {
-  @keyframes fondoColor {
-    0% {
-      background-color: #095797; }
-    33% {
-      background-color: rgba(22, 42, 214, 0.732); }
-    66% {
-      background-color: rgba(13, 112, 233, 0.732); }
-    100% {
-      background-color: #197aa0; } }
-  .body {
-    animation-name: fondoColor;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite; }
-  .navegador {
-    padding: 1rem 1rem 0rem 1rem; }
-    .navegador ul {
-      flex-direction: column;
-      align-items: flex-start; }
-    .navegador li {
-      font-size: 1rem;
-      margin: 2px; }
-  .presentacion {
-    width: 100%;
-    transform: translateY(10px); }
-  .carousel {
-    width: 80%; }
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    text-align: column;
-    align-items: center; }
-  .imgNosotros {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    padding: 10px; }
-  .contacto {
-    flex-direction: column; }
-    .contacto input {
-      font-size: 1rem;
-      flex-direction: column;
-      align-items: center; }
-      .contacto input :focus {
-        font-size: 2rem; }
-    .contacto textarea {
-      font-size: 1rem; }
-      .contacto textarea :focus {
-        font-size: 2rem; }
-  .enviar {
-    margin-left: auto;
-    margin-right: auto; }
-  .resetear {
-    margin-left: auto;
-    margin-right: auto; }
-  .relleno {
-    display: flex;
-    height: 30px; }
-  .pieDePagina {
-    font-size: 1rem;
-    color: whitesmoke; } }

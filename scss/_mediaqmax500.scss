@@ -1,23 +1,9 @@
 @media screen and (max-width: 500px) {
 
-    @keyframes fondoColor {
-        0% {
-         background-color: rgb(9, 87, 151);
-        }
-
-        33% {
-            background-color: rgba(22, 42, 214, 0.732);
-        }
-
-        66% {
-            background-color: rgba(13, 112, 233, 0.732);
-        }
-
-        100% {
-            background-color: rgb(25, 122, 160);
-        }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
     }
-
     .body {
         animation-name: fondoColor;
         animation-duration: 3s;
@@ -27,6 +13,7 @@
 
     .navegador {
         padding: 1rem 1rem 0rem 1rem;
+        
 
         ul {
             flex-direction: column;
@@ -52,9 +39,8 @@
         display: flex;
         flex-direction: column;
         font-size: 2rem;
-        text-align: column;
-        align-items: center;
-    }
+        text-align: center;
+            }
 
     .imgNosotros {
         display: flex;
