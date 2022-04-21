@@ -1,25 +1,49 @@
 .navegador {
-    padding: 2rem;
-    position: relative;
+    
+    padding: 3rem;
     z-index: 121;
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    li {
-        display: inline-block;
-        font-size: 2rem;
-
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+    flex-direction: row;
+    
+        .navbar-brand{
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+        .navbar-toggler{
+            background-color: whitesmoke;
+            border: 1px;
+            border-color: whitesmoke;
+        }
         a {
+            font-size: 3rem;
             text-decoration: none;
             color: whitesmoke;
-            transition: font-size 1s;
-
+            
             &:hover {
-                font-size: 3rem;
                 color: red;
             }
         }
-    }
+        .collapse {
+            font-size: 2rem;
+           
+            .navbar-nav{
+                        
+                li {
+                    font-size: 2rem;
+                    a {
+                        text-decoration: none;
+                        color: whitesmoke;
+                                  
+                        &:hover {
+                            
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    
 }
+

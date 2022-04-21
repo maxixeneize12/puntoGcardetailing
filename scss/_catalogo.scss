@@ -2,89 +2,79 @@
     
     margin: 10px;
     padding: 50px;
+
+    img{
+        width: 100%;
+        transition: width 2s;
+        border: 2px inset violet;
+
+        &:hover {
+            width: 105%;
+            padding: 2px;
+            border: 5px inset cyan;
+            
+        }
+    }
 }
+.cera{
+    display: flex;
+    justify-content: center;
 
-.cera {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
-
-    &:hover {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
-        
+    a{
+        width: 60%;
     }
 }
 
 .limpiadores {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
 
 .llantas {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
 
 .perfumes {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
 
 .quik-detail {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
 
 .shampoo {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
 
 .interiores {
-    width: 40%;
-    border: 2px inset violet;
-    transition: width 2s;
+    display: flex;
+    justify-content: center;
 
-    &:hover  {
-        width: 50%;
-        padding: 2px;
-        border: 5px inset cyan;
+    a{
+        width: 60%;
     }
 }
