@@ -1,9 +1,10 @@
 @media screen and (max-width: 500px) {
-
+    
     h2 {
         font-size: 2rem;
         text-align: center;
     }
+
     .body {
         animation-name: fondoColor;
         animation-duration: 3s;
@@ -11,47 +12,33 @@
         animation-iteration-count: infinite;
     }
 
-    .navegador {
-        padding: 1rem 1rem 0rem 1rem;
-        
-
-        ul {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        li {
-            font-size: 1rem;
-            margin: 2px
-        }
-    }
-
-    .presentacion {
-        width: 100%;
-        transform: translateY(10px);
-    }
-
-    .carousel {
-        width: 80%;
-    }
-
-    .nosotros {
-        display: flex;
-        flex-direction: column;
+    
+    .img-presentacion2{
+        display: block;
         font-size: 2rem;
-        text-align: center;
-            }
-
-    .imgNosotros {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-        padding: 10px;
     }
+
+    .galeria-catalogo{
+        padding: 2px;
+        a{width: 80%;}
+    }
+    .compras-formulario{
+        flex-direction: column;
+        font-size: 1rem;
+        
+        input {
+        text-align: center;}
+
+    } 
+.compras{
+    padding: 5px;
+    img{
+        width: 100%;
+    }
+}
 
     .contacto {
-        flex-direction: column;
-           
+         
         input {
             font-size: 1rem;
             flex-direction: column;
@@ -82,13 +69,9 @@
         margin-right: auto;
     }
 
-    .relleno {
-        display: flex;
-        height: 30px;
-    }
 
     .pieDePagina {
-        font-size: 1rem;
+        font-size: 2rem;
         color: whitesmoke;
     }
 }
