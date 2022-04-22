@@ -1,11 +1,13 @@
 .img-presentacion2{
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: 4rem;
     text-align: center;
+    
 }
 .ingresa {
-    
+    text-decoration: none;
     color: rgb(6, 160, 6);
     
     &:hover {

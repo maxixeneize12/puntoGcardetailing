@@ -7,17 +7,6 @@ html {
     font-size: 62.5%;
 }
 
-@keyframes fondoColor {
-    0% {
-        background-color: black;
-    }
-    50% {
-        background-color: grey;
-    }
-    100% {
-        background-color: black;
-    }
-}
 
 h1 {
     font-size: 5rem;
@@ -25,17 +14,13 @@ h1 {
 }
 
 h2 {
-       
+    color: rgb(6, 160, 6);  
     font-size: 5rem;
     text-align: center;
 }
 
 body {
     font-family: 'Syne Mono', monospace;
-    color: whitesmoke;
+    background: linear-gradient(to bottom, #000000 40%, #ffffff 100%);
     text-decoration: none;
-    animation-name: fondoColor;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
 }

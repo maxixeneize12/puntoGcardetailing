@@ -5,30 +5,19 @@
 html {
   font-size: 62.5%; }
 
-@keyframes fondoColor {
-  0% {
-    background-color: black; }
-  50% {
-    background-color: grey; }
-  100% {
-    background-color: black; } }
-
 h1 {
   font-size: 5rem;
   text-align: center; }
 
 h2 {
+  color: #06a006;
   font-size: 5rem;
   text-align: center; }
 
 body {
   font-family: 'Syne Mono', monospace;
-  color: whitesmoke;
-  text-decoration: none;
-  animation-name: fondoColor;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite; }
+  background: linear-gradient(to bottom, #000000 40%, #ffffff 100%);
+  text-decoration: none; }
 
 .navegador {
   padding: 3rem;
@@ -64,15 +53,18 @@ body {
 .presentacion1 {
   display: flex;
   justify-content: center;
-  margin: 10px; }
+  margin: 2px;
+  transform: scaleX(1.2); }
 
 .img-presentacion2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-size: 4rem;
   text-align: center; }
 
 .ingresa {
+  text-decoration: none;
   color: #06a006; }
   .ingresa:hover {
     color: red; }
@@ -83,53 +75,53 @@ body {
   .galeria-catalogo img {
     width: 100%;
     transition: width 2s;
-    border: 2px inset violet; }
+    border: 3px inset violet; }
     .galeria-catalogo img:hover {
       width: 105%;
       padding: 2px;
-      border: 5px inset cyan; }
+      border: 5px inset red; }
 
 .cera {
   display: flex;
   justify-content: center; }
   .cera a {
-    width: 60%; }
+    width: 50%; }
 
 .limpiadores {
   display: flex;
   justify-content: center; }
   .limpiadores a {
-    width: 60%; }
+    width: 50%; }
 
 .llantas {
   display: flex;
   justify-content: center; }
   .llantas a {
-    width: 60%; }
+    width: 50%; }
 
 .perfumes {
   display: flex;
   justify-content: center; }
   .perfumes a {
-    width: 60%; }
+    width: 50%; }
 
 .quik-detail {
   display: flex;
   justify-content: center; }
   .quik-detail a {
-    width: 60%; }
+    width: 50%; }
 
 .shampoo {
   display: flex;
   justify-content: center; }
   .shampoo a {
-    width: 60%; }
+    width: 50%; }
 
 .interiores {
   display: flex;
   justify-content: center; }
   .interiores a {
-    width: 60%; }
+    width: 50%; }
 
 .quienes-somos {
   display: flex;
@@ -210,36 +202,47 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  border: 2px solid violet;
+  border-radius: 10px; }
 
 .contacto input {
-  font-size: 2rem; }
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid violet; }
 
 .contacto textarea {
-  font-size: 2rem; }
+  font-size: 2rem;
+  border-radius: 15px;
+  border: 1px solid violet; }
 
 .enviar {
+  border-radius: 20px;
   display: flex;
   justify-content: center; }
 
 .resetear {
+  border-radius: 20px;
   display: flex;
   justify-content: center; }
 
 .pieDePagina {
   margin: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
-  color: darkcyan;
   text-decoration: none; }
 
 .instagram {
   text-decoration: none;
-  color: whitesmoke; }
+  color: #06a006; }
+  .instagram:hover {
+    color: red; }
 
 .whatsapp {
   text-decoration: none;
-  color: whitesmoke; }
+  color: #06a006; }
+  .whatsapp:hover {
+    color: red; }
 
 @media screen and (max-width: 768px) {
   h2 {
