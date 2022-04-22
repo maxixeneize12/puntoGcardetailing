@@ -204,6 +204,7 @@ body {
     .compras .compra-shampoo div {
       padding: 3%; }
 
+<<<<<<< HEAD
 .contacto .formulario {
   display: flex;
   font-size: 3rem;
@@ -217,6 +218,19 @@ body {
 
 .contacto textarea {
   font-size: 2rem; }
+=======
+.contacto {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 3rem;
+  flex-direction: column;
+  align-items: center; }
+  .contacto input {
+    font-size: 2rem; }
+  .contacto textarea {
+    font-size: 2rem; }
+>>>>>>> refs/remotes/origin/main
 
 .enviar {
   display: flex;
@@ -241,6 +255,7 @@ body {
   text-decoration: none;
   color: whitesmoke; }
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 4rem;
@@ -261,6 +276,8 @@ body {
   .compras {
     padding: 10px; } }
 
+=======
+>>>>>>> refs/remotes/origin/main
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 2rem;
@@ -270,6 +287,7 @@ body {
     animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite; }
+<<<<<<< HEAD
   .img-presentacion2 {
     display: block;
     font-size: 2rem; }
@@ -296,12 +314,82 @@ body {
     font-size: 1rem; }
     .contacto textarea :focus {
       font-size: 2rem; }
+=======
+  .presentacion1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .img-presentacion2 {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center; }
+  .carousel {
+    width: 80%; }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center; }
+  .imgNosotros {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px; }
+  .contacto {
+    flex-direction: column; }
+    .contacto input {
+      font-size: 1rem;
+      flex-direction: column;
+      align-items: center; }
+      .contacto input :focus {
+        font-size: 2rem; }
+    .contacto textarea {
+      font-size: 1rem; }
+      .contacto textarea :focus {
+        font-size: 2rem; }
+>>>>>>> refs/remotes/origin/main
   .enviar {
     margin-left: auto;
     margin-right: auto; }
   .resetear {
     margin-left: auto;
     margin-right: auto; }
+<<<<<<< HEAD
   .pieDePagina {
     font-size: 2rem;
+=======
+  .relleno {
+    display: flex;
+    height: 30px; }
+  .pieDePagina {
+    font-size: 1rem;
+    color: whitesmoke; } }
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .carousel {
+    width: 35%; }
+  .nosotros {
+    flex-direction: row;
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: end;
+    color: whitesmoke; }
+  .contacto {
+    font-size: 2rem; }
+    .contacto input {
+      transition: none; }
+    .contacto textarea {
+      font-size: 2rem;
+      transition: none; }
+      .contacto textarea :focus {
+        font-size: 4rem; }
+  .pieDePagina {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+>>>>>>> refs/remotes/origin/main
     color: whitesmoke; } }

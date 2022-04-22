@@ -1,0 +1,104 @@
+/*condicionales IF*/
+
+$main: dia del padre;
+
+$navegador: navegador;
+
+html{
+    @if $main == navidad{
+        background: linear-gradient(329deg, rgba(241,4,4,1) 0%, rgb(6, 252, 120) 100%);;
+    } @else if $main == dia del padre{
+        background: linear-gradient(329deg, rgb(25, 0, 247) 0%, rgba(253,187,45,1) 100%);
+    } @else{
+        background-color: rgba(22, 26, 31);
+    }
+}
+
+/*bucles*/
+
+@for $i from 1 through 5{
+    .imgNosotros-#{$i}{
+        width: 35% * $i;
+    }
+}
+
+/*each*/
+
+@each $color in red, blue, yellow {
+    .#{$color} {
+        color:#{$color};
+    }
+}
+
+/*maps*/
+$redes: ( 
+    instagram: #f30ce0, whatsapp: #0bf503,
+);
+
+@each $red, $color in $redes {
+    .#{$red}{
+        background-color: $color;
+    }
+}
+
+/*maps get*/
+
+$estilos:(
+    color: blue,
+    centro: center,
+    tFuente: 35px,
+    1rem: 1rem,
+);
+
+h2 {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+    font-size: map-get($estilos, tFuente);
+}
+
+/*extend*/
+
+%boton {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.enviar{
+    @extend %boton;
+    background: rgb(3, 39, 243);
+    color: yellow;
+}
+
+.resetear{
+    @extend %boton;
+    background: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+/*mixins*/
+
+@mixin sizes ($ancho, $alto, $padding, $margin){
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flexbox ($flex, $direction, $wrap) {
+    display: $flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+.nosotros {
+    @include flexbox (flex, column, initial)
+}
+.pieDePagina {
+    @include sizes (500px, 50px, 2px, 1px)
+}
