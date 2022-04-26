@@ -1,31 +1,201 @@
 @media screen and (max-width: 768px) {
 
     h2 {
-        font-size: 4rem;
+        font-size: 10rem;
         text-align: center;
+        color: whitesmoke;
     }
 
-    .img-presentacion2{
+    h3 {
+        font-size: 5rem;
+        text-align: center;
+        color: rgb(7, 65, 80);
+    }
+
+    .img-presentacion2 {
         display: flex;
         flex-direction: column;
-    }
-    .galeria-catalogo{
-        padding: 10px;
-        a{width: 80%;}
-    }
-   
-    .nosotros {
-        flex-direction: column;
-        margin: 10px;
-        font-size: 1.5rem;
-        text-align: center;
-        color: whitesmoke
-         
+
     }
 
-    .compras{
-        padding: 10px;
-        
-        
+    .texto {
+        font-size: 3rem;
+        text-align: center;
+
+        .ingresa {
+            text-decoration: none;
+            color: rgb(165, 10, 155);
+
+            &:hover {
+                color: red;
+            }
+        }
     }
+
+    .navegador {
+        justify-content: end;
+
+        .navbar-toggler {
+            font-size: 1.5rem;
+            background-color: whitesmoke;
+            border: 2px;
+            border-color: red;
+        }
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: whitesmoke;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+
+
+
+    }
+
+    .catalogo {
+        h2 {
+            font-size: 6rem;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        h3 {
+            font-size: 5rem;
+            text-align: center;
+            color: rgb(7, 65, 80);
+        }
+
+        .galeria-catalogo {
+
+            padding: 15px;
+
+            a {
+                width: 80%;
+            }
+        }
+    }
+
+    .quienes-somos {
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .nosotros {
+            flex-direction: column;
+            margin: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+            color: black
+        }
+    }
+
+    .compras {
+        h2 {
+            font-size: 5rem;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        img {
+            border: 2px inset violet;
+
+            &:hover {
+                width: 100%;
+                padding: 2px;
+                border: 5px inset cyan;
+            }
+        }
+
+        .compras-cera {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-limpiadores {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-limpiadores {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-llantas {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-perfumes {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-quick-detail {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+
+        .compra-shampoo {
+            display: flex;
+            flex-direction: column;
+            padding: 3px;
+        }
+    }
+
+    .contacto {
+        .formulario {
+
+            color: rgb(7, 66, 80);
+            border: 2px solid rgb(77, 3, 77);
+            border-radius: 10px;
+        }
+    }
+
+
+    .enviar {
+        border-bottom-color: aqua;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .resetear {
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .instagram {
+        text-decoration: none;
+        color: rgb(165, 10, 155);
+
+        &:hover {
+            color: red;
+        }
+
+    }
+
+    .whatsapp {
+        text-decoration: none;
+        color: rgb(165, 10, 155);
+
+        &:hover {
+            color: red;
+        }
+    }
+
 }

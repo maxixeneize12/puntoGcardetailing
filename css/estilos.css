@@ -26,14 +26,10 @@ body {
   justify-content: space-around;
   align-self: stretch;
   flex-direction: row; }
-  .navegador .navbar-brand {
-    padding-top: 0%;
-    padding-bottom: 0%; }
   .navegador .navbar-toggler {
     font-size: 2rem;
     background-color: whitesmoke;
-    border: 1px;
-    border-color: whitesmoke; }
+    border: 1px; }
   .navegador a {
     font-size: 3rem;
     text-decoration: none;
@@ -56,18 +52,19 @@ body {
   margin: 2px;
   transform: scaleX(1.2); }
 
-.img-presentacion2 {
+.presentacion2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; }
+
+.texto {
   font-size: 4rem;
   text-align: center; }
-
-.ingresa {
-  text-decoration: none;
-  color: #06a006; }
-  .ingresa:hover {
-    color: red; }
+  .texto .ingresa {
+    text-decoration: none;
+    color: #06a006; }
+    .texto .ingresa:hover {
+      color: red; }
 
 .galeria-catalogo {
   margin: 10px;
@@ -75,53 +72,53 @@ body {
   .galeria-catalogo img {
     width: 100%;
     transition: width 2s;
-    border: 3px inset violet; }
+    border: 2px inset violet; }
     .galeria-catalogo img:hover {
       width: 105%;
       padding: 2px;
-      border: 5px inset red; }
+      border: 5px inset cyan; }
 
 .cera {
   display: flex;
   justify-content: center; }
   .cera a {
-    width: 50%; }
+    width: 60%; }
 
 .limpiadores {
   display: flex;
   justify-content: center; }
   .limpiadores a {
-    width: 50%; }
+    width: 60%; }
 
 .llantas {
   display: flex;
   justify-content: center; }
   .llantas a {
-    width: 50%; }
+    width: 60%; }
 
 .perfumes {
   display: flex;
   justify-content: center; }
   .perfumes a {
-    width: 50%; }
+    width: 60%; }
 
 .quik-detail {
   display: flex;
   justify-content: center; }
   .quik-detail a {
-    width: 50%; }
+    width: 60%; }
 
 .shampoo {
   display: flex;
   justify-content: center; }
   .shampoo a {
-    width: 50%; }
+    width: 60%; }
 
 .interiores {
   display: flex;
   justify-content: center; }
   .interiores a {
-    width: 50%; }
+    width: 60%; }
 
 .quienes-somos {
   display: flex;
@@ -132,10 +129,11 @@ body {
 
 .nosotros {
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
-  font-size: 2rem;
-  color: whitesmoke; }
+  font-size: 2.5rem;
+  color: black; }
 
 .compras {
   margin: 10px;
@@ -199,6 +197,7 @@ body {
 .contacto .formulario {
   display: flex;
   font-size: 3rem;
+  color: #06a006;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -246,23 +245,120 @@ body {
 
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 4rem;
-    text-align: center; }
+    font-size: 10rem;
+    text-align: center;
+    color: whitesmoke; }
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+    color: #074150; }
   .img-presentacion2 {
     display: flex;
     flex-direction: column; }
-  .galeria-catalogo {
-    padding: 10px; }
-    .galeria-catalogo a {
+  .texto {
+    font-size: 3rem;
+    text-align: center; }
+    .texto .ingresa {
+      text-decoration: none;
+      color: #a50a9b; }
+      .texto .ingresa:hover {
+        color: red; }
+  .navegador {
+    justify-content: end; }
+    .navegador .navbar-toggler {
+      font-size: 1.5rem;
+      background-color: whitesmoke;
+      border: 2px;
+      border-color: red; }
+    .navegador a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: whitesmoke; }
+      .navegador a:hover {
+        color: red; }
+  .catalogo h2 {
+    font-size: 6rem;
+    text-align: center;
+    color: whitesmoke; }
+  .catalogo h3 {
+    font-size: 5rem;
+    text-align: center;
+    color: #074150; }
+  .catalogo .galeria-catalogo {
+    padding: 15px; }
+    .catalogo .galeria-catalogo a {
       width: 80%; }
-  .nosotros {
+  .quienes-somos h2 {
+    font-size: 5rem;
+    text-align: center;
+    color: whitesmoke; }
+  .quienes-somos .nosotros {
     flex-direction: column;
     margin: 10px;
     font-size: 1.5rem;
     text-align: center;
+    color: black; }
+  .compras h2 {
+    font-size: 5rem;
+    text-align: center;
     color: whitesmoke; }
-  .compras {
-    padding: 10px; } }
+  .compras img {
+    border: 2px inset violet; }
+    .compras img:hover {
+      width: 100%;
+      padding: 2px;
+      border: 5px inset cyan; }
+  .compras .compras-cera {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-limpiadores {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-limpiadores {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-llantas {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-perfumes {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-quick-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .compras .compra-shampoo {
+    display: flex;
+    flex-direction: column;
+    padding: 3px; }
+  .contacto .formulario {
+    color: #074250;
+    border: 2px solid #4d034d;
+    border-radius: 10px; }
+  .enviar {
+    border-bottom-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; }
+  .resetear {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; }
+  .instagram {
+    text-decoration: none;
+    color: #a50a9b; }
+    .instagram:hover {
+      color: red; }
+  .whatsapp {
+    text-decoration: none;
+    color: #a50a9b; }
+    .whatsapp:hover {
+      color: red; } }
 
 @media screen and (max-width: 500px) {
   h2 {

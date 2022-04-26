@@ -6,23 +6,22 @@
     img{
         width: 100%;
         transition: width 2s;
-        border: 3px inset violet;
+        border: 2px inset violet;
 
         &:hover {
             width: 105%;
             padding: 2px;
-            border: 5px inset red;
+            border: 5px inset cyan;
             
         }
     }
 }
 .cera{
-    
     display: flex;
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -31,7 +30,7 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -40,7 +39,7 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -49,7 +48,7 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -58,7 +57,7 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -67,7 +66,7 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -76,6 +75,6 @@
     justify-content: center;
 
     a{
-        width: 50%;
+        width: 60%;
     }
 }

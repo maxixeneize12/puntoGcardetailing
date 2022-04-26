@@ -1,10 +1,25 @@
-.presentacion {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(-100px) ;
-}
+    .presentacion1 {
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+        transform: scaleX(1.2);
+    }
+
+    .presentacion2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}  
+    
+
+    .texto{
+        font-size: 4rem;
+        text-align: center;
+
+        .ingresa {
+            text-decoration: none;
+            color: rgb(6, 160, 6);
+            
+            &:hover {
+                color: red;}
+        }
+    }
