@@ -10,17 +10,30 @@ h1 {
   text-align: center; }
 
 h2 {
-  color: #06a006;
+  color: wheat;
   font-size: 5rem;
   text-align: center; }
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
+  color: red; }
 
 body {
   font-family: 'Syne Mono', monospace;
   background: linear-gradient(to bottom, #000000 40%, #ffffff 100%);
   text-decoration: none; }
 
+.arriba {
+  transform: translateY(400px);
+  position: sticky;
+  top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.5; }
+
 .navegador {
-  padding: 3rem;
+  padding: 2rem;
   z-index: 121;
   display: flex;
   justify-content: space-around;
@@ -28,12 +41,12 @@ body {
   flex-direction: row; }
   .navegador .navbar-toggler {
     font-size: 2rem;
-    background-color: whitesmoke;
+    background-color: wheat;
     border: 1px; }
   .navegador a {
     font-size: 3rem;
     text-decoration: none;
-    color: whitesmoke; }
+    color: wheat; }
     .navegador a:hover {
       color: red; }
   .navegador .collapse {
@@ -197,12 +210,11 @@ body {
 .contacto .formulario {
   display: flex;
   font-size: 3rem;
-  color: #06a006;
+  color: red;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  border: 2px solid violet;
   border-radius: 10px; }
 
 .contacto input {

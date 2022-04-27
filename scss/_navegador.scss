@@ -1,28 +1,26 @@
 .navegador {
     
-    padding: 3rem;
+    padding: 2rem;
     z-index: 121;
     display: flex;
     justify-content: space-around;
     align-self: stretch;
     flex-direction: row;
-    
-        
-        .navbar-toggler{
-            font-size: 2rem;
-            background-color: whitesmoke;
-            border: 1px;
-        
-        }
-        a {
-            font-size: 3rem;
-            text-decoration: none;
-            color: whitesmoke;
             
-            &:hover {
-                color: red;
-            }
+        .navbar-toggler {
+            font-size: 2rem;
+            background-color: wheat;
+            border: 1px;}
+
+            a {
+                font-size: 3rem;
+                text-decoration: none;
+                color: wheat;
+                
+                &:hover {
+                    color: red;}
         }
+
         .collapse {
             font-size: 2rem;
            
@@ -35,9 +33,7 @@
                         color: whitesmoke;
                                   
                         &:hover {
-                            
-                            color: red;
-                        }
+                            color: red;}
                     }
                 }
             }
