@@ -1,43 +1,26 @@
 @media screen and (max-width: 768px) {
 
     h2 {
-        font-size: 10rem;
+        font-size: 6rem;
         text-align: center;
-        color: whitesmoke;
+        color: wheat;
     }
 
     h3 {
         font-size: 5rem;
         text-align: center;
-        color: rgb(7, 65, 80);
+        color: cyan;
+        margin-top: 20px;
+        padding-top: 20px;
     }
 
-    .img-presentacion2 {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .texto {
-        font-size: 3rem;
-        text-align: center;
-
-        .ingresa {
-            text-decoration: none;
-            color: rgb(165, 10, 155);
-
-            &:hover {
-                color: red;
-            }
-        }
-    }
-
+    /*navegador*/
     .navegador {
         justify-content: end;
 
         .navbar-toggler {
             font-size: 1.5rem;
-            background-color: whitesmoke;
+            background-color: wheat;
             border: 2px;
             border-color: red;
         }
@@ -45,33 +28,47 @@
         a {
             font-size: 2rem;
             text-decoration: none;
-            color: whitesmoke;
-
-            &:hover {
-                color: red;
-            }
+            color: wheat;
         }
+    }
 
-
-
+    /*felcha arriba*/
+    .arriba {
+        transform: translateY(350px);
 
     }
 
+    /*imagen presentacion 1*/
+    .presentacion1 {
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+        transform: translateY(-15px);
+    }
+
+    /*imagen presentacion 2*/
+    .presentacion2 {
+        .video-presentacion2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .texto {
+            font-size: 2rem;
+            text-align: center;
+
+            .ingresa {
+                text-decoration: none;
+                color: rgb(6, 160, 6);
+            }
+        }
+    }
+
+    /*catalogo*/
     .catalogo {
-        h2 {
-            font-size: 6rem;
-            text-align: center;
-            color: whitesmoke;
-        }
-
-        h3 {
-            font-size: 5rem;
-            text-align: center;
-            color: rgb(7, 65, 80);
-        }
-
         .galeria-catalogo {
-
             padding: 15px;
 
             a {
@@ -80,37 +77,22 @@
         }
     }
 
+    /*nosotros*/
     .quienes-somos {
-        h2 {
-            font-size: 5rem;
-            text-align: center;
-            color: whitesmoke;
-        }
-
         .nosotros {
             flex-direction: column;
             margin: 10px;
-            font-size: 1.5rem;
+            font-size: 3rem;
             text-align: center;
-            color: black
+            color: wheat
         }
     }
 
+    /*carrito*/
     .compras {
-        h2 {
-            font-size: 5rem;
-            text-align: center;
-            color: whitesmoke;
-        }
 
         img {
-            border: 2px inset violet;
-
-            &:hover {
-                width: 100%;
-                padding: 2px;
-                border: 5px inset cyan;
-            }
+            border: 2px;
         }
 
         .compras-cera {
@@ -156,15 +138,15 @@
         }
     }
 
+    /*contacto*/
     .contacto {
         .formulario {
 
-            color: rgb(7, 66, 80);
-            border: 2px solid rgb(77, 3, 77);
+            color: cyan;
+            border: 2px;
             border-radius: 10px;
         }
     }
-
 
     .enviar {
         border-bottom-color: aqua;
@@ -179,23 +161,15 @@
         justify-content: center;
     }
 
+    /*footer*/
     .instagram {
         text-decoration: none;
         color: rgb(165, 10, 155);
-
-        &:hover {
-            color: red;
-        }
-
     }
 
     .whatsapp {
         text-decoration: none;
         color: rgb(165, 10, 155);
-
-        &:hover {
-            color: red;
-        }
     }
 
 }

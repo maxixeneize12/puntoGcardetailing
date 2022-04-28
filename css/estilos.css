@@ -21,7 +21,7 @@ h3 {
 
 body {
   font-family: 'Oswald', sans-serif;
-  background: linear-gradient(to bottom, #000000 50%, #ffffff 100%);
+  background: linear-gradient(to bottom, #000000 60%, #ffffff 100%);
   text-decoration: none; }
 
 .arriba {
@@ -66,9 +66,9 @@ body {
   margin: 2px;
   transform: scaleX(1.5); }
 
-.presentacion2 .img-presentacion2 {
+.presentacion2 .video-presentacion2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; }
 
 .presentacion2 .texto {
@@ -139,6 +139,11 @@ body {
     .container3 .shampoo a {
       width: 60%; }
 
+.bodyNosotros {
+  font-family: 'Oswald', sans-serif;
+  background: black;
+  text-decoration: none; }
+
 .quienes-somos {
   display: flex;
   flex-direction: column;
@@ -152,18 +157,17 @@ body {
   text-align: center;
   align-items: center;
   font-size: 2.5rem;
-  color: black; }
+  color: wheat; }
 
 .compras {
   margin: 10px;
-  padding: 50px; }
+  padding: 10px; }
   .compras img {
     width: 100%;
     transition: width 1s;
-    border: 2px inset violet;
+    border: 2px;
     border-radius: 30px; }
     .compras img:hover {
-      width: 120%;
       padding: 2px;
       border: 5px inset cyan; }
   .compras .compras-formulario {
@@ -265,69 +269,63 @@ body {
 
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 10rem;
+    font-size: 6rem;
     text-align: center;
-    color: whitesmoke; }
+    color: wheat; }
   h3 {
     font-size: 5rem;
     text-align: center;
-    color: #074150; }
-  .img-presentacion2 {
-    display: flex;
-    flex-direction: column; }
-  .texto {
-    font-size: 3rem;
-    text-align: center; }
-    .texto .ingresa {
-      text-decoration: none;
-      color: #a50a9b; }
-      .texto .ingresa:hover {
-        color: red; }
+    color: cyan;
+    margin-top: 20px;
+    padding-top: 20px; }
+  /*navegador*/
   .navegador {
     justify-content: end; }
     .navegador .navbar-toggler {
       font-size: 1.5rem;
-      background-color: whitesmoke;
+      background-color: wheat;
       border: 2px;
       border-color: red; }
     .navegador a {
       font-size: 2rem;
       text-decoration: none;
-      color: whitesmoke; }
-      .navegador a:hover {
-        color: red; }
-  .catalogo h2 {
-    font-size: 6rem;
-    text-align: center;
-    color: whitesmoke; }
-  .catalogo h3 {
-    font-size: 5rem;
-    text-align: center;
-    color: #074150; }
+      color: wheat; }
+  /*felcha arriba*/
+  .arriba {
+    transform: translateY(350px); }
+  /*imagen presentacion 1*/
+  .presentacion1 {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    transform: translateY(-15px); }
+  /*imagen presentacion 2*/
+  .presentacion2 .video-presentacion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px; }
+  .presentacion2 .texto {
+    font-size: 2rem;
+    text-align: center; }
+    .presentacion2 .texto .ingresa {
+      text-decoration: none;
+      color: #06a006; }
+  /*catalogo*/
   .catalogo .galeria-catalogo {
     padding: 15px; }
     .catalogo .galeria-catalogo a {
       width: 80%; }
-  .quienes-somos h2 {
-    font-size: 5rem;
-    text-align: center;
-    color: whitesmoke; }
+  /*nosotros*/
   .quienes-somos .nosotros {
     flex-direction: column;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
-    color: black; }
-  .compras h2 {
-    font-size: 5rem;
-    text-align: center;
-    color: whitesmoke; }
+    color: wheat; }
+  /*carrito*/
   .compras img {
-    border: 2px inset violet; }
-    .compras img:hover {
-      width: 100%;
-      padding: 2px;
-      border: 5px inset cyan; }
+    border: 2px; }
   .compras .compras-cera {
     display: flex;
     flex-direction: column;
@@ -356,9 +354,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3px; }
+  /*contacto*/
   .contacto .formulario {
-    color: #074250;
-    border: 2px solid #4d034d;
+    color: cyan;
+    border: 2px;
     border-radius: 10px; }
   .enviar {
     border-bottom-color: aqua;
@@ -369,62 +368,86 @@ body {
     border-radius: 20px;
     display: flex;
     justify-content: center; }
+  /*footer*/
   .instagram {
     text-decoration: none;
     color: #a50a9b; }
-    .instagram:hover {
-      color: red; }
   .whatsapp {
     text-decoration: none;
-    color: #a50a9b; }
-    .whatsapp:hover {
-      color: red; } }
+    color: #a50a9b; } }
 
 @media screen and (max-width: 500px) {
   h2 {
-    font-size: 2rem;
-    text-align: center; }
-  .body {
-    animation-name: fondoColor;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite; }
+    font-size: 4rem; }
+  h3 {
+    font-size: 3rem;
+    margin-top: 10px;
+    padding-top: 10px; }
+  /*navegador*/
+  .navegador {
+    justify-content: end; }
+    .navegador .navbar-toggler {
+      font-size: 1rem;
+      background-color: wheat;
+      border: 2px;
+      border-color: red; }
+    .navegador a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: wheat; }
+  /*felcha arriba*/
+  .arriba {
+    transform: translateY(375px); }
+  /*imagen presentacion 1*/
   .presentacion1 {
-    display: block;
-    padding-top: 30px; }
-  .img-presentacion2 {
-    display: block;
-    padding-top: 30px; }
-  .galeria-catalogo {
-    padding: 2px; }
-    .galeria-catalogo a {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    transform: translateY(-15px); }
+  /*imagen presentacion 2*/
+  .presentacion2 .video-presentacion2 {
+    padding: 10px; }
+  .presentacion2 .texto {
+    font-size: 2.5rem;
+    color: wheat; }
+    .presentacion2 .texto .ingresa {
+      color: #a50a9b; }
+  /*catalogo*/
+  .catalogo .galeria-catalogo {
+    padding: 5px; }
+    .catalogo .galeria-catalogo a {
       width: 80%; }
-  .compras-formulario {
+  /*nosotros*/
+  .quienes-somos .nosotros {
+    font-size: 2.5rem;
+    text-align: center; }
+  /*carrito*/
+  .compras img {
+    border: 2px; }
+  .compras .compras-formulario {
     flex-direction: column;
     font-size: 1rem; }
-    .compras-formulario input {
+    .compras .compras-formulario input {
       text-align: center; }
-  .compras {
-    padding: 5px; }
-    .compras img {
-      width: 100%; }
+  /*contacto*/
   .contacto input {
     font-size: 1rem;
     flex-direction: column;
     align-items: center; }
-    .contacto input :focus {
-      font-size: 2rem; }
   .contacto textarea {
     font-size: 1rem; }
-    .contacto textarea :focus {
-      font-size: 2rem; }
   .enviar {
     margin-left: auto;
     margin-right: auto; }
   .resetear {
     margin-left: auto;
     margin-right: auto; }
-  .pieDePagina {
+  /*footer*/
+  .instagram {
     font-size: 2rem;
-    color: whitesmoke;
-    padding: 15px; } }
+    text-decoration: none;
+    color: #a50a9b; }
+  .whatsapp {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #a50a9b; } }
