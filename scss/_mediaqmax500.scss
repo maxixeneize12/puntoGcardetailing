@@ -12,10 +12,14 @@
         animation-iteration-count: infinite;
     }
 
-    
+    .presentacion1{
+        display: block;
+        padding-top: 30px;
+    }
+
     .img-presentacion2{
         display: block;
-        font-size: 2rem;
+        padding-top: 30px;
     }
 
     .galeria-catalogo{
@@ -73,5 +77,6 @@
     .pieDePagina {
         font-size: 2rem;
         color: whitesmoke;
+        padding: 15px;
     }
 }

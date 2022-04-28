@@ -26,8 +26,8 @@ h3{
     color: red;}
     
 body {
-    font-family: 'Syne Mono', monospace;
-    background: linear-gradient(to bottom, #000000 40%, #ffffff 100%);
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to bottom, #000000 50%, #ffffff 100%);
     text-decoration: none;
 }
 
@@ -38,5 +38,6 @@ body {
     display: flex;
     justify-content: flex-end;
     opacity: 0.5;
+    margin: 10px;
     
 }
