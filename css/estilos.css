@@ -71,13 +71,13 @@ body {
   flex-direction: row;
   align-items: center; }
 
-.presentacion2 .texto {
+.presentacion2 .txt-presentacion2 {
   font-size: 4rem;
   text-align: center; }
-  .presentacion2 .texto .ingresa {
+  .presentacion2 .txt-presentacion2 .ingresa {
     text-decoration: none;
     color: #06a006; }
-    .presentacion2 .texto .ingresa:hover {
+    .presentacion2 .txt-presentacion2 .ingresa:hover {
       color: red; }
 
 .galeria-catalogo {
@@ -249,7 +249,8 @@ body {
   display: flex;
   justify-content: center; }
 
-.pieDePagina {
+.redes-sociales {
+  display: flex;
   margin: 10px;
   font-size: 2.5rem;
   text-align: center;
