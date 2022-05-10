@@ -160,7 +160,7 @@ body {
 
 .bodyNosotros {
   font-family: 'Oswald', sans-serif;
-  background: black;
+  background: linear-gradient(to bottom, #000000 77%, #ffffff 50%);
   text-decoration: none; }
 
 .quienes-somos {
@@ -283,11 +283,31 @@ body {
     .redes-sociales .whatsapp:hover {
       color: red; }
 
-.body-metodos {
+.body-pago-y-condiciones {
   background: black;
   color: wheat;
   font-size: 2rem;
   text-align: center; }
+
+h2 {
+  color: red; }
+
+.accordion .accordion-button {
+  font-size: 2.5rem;
+  color: black; }
+
+.accordion .accordion-body {
+  font-size: 2rem;
+  color: black; }
+
+.banner367 {
+  font-size: 2rem; }
+  .banner367 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: wheat; }
+    .banner367 a:hover {
+      color: red; }
 
 @media screen and (max-width: 768px) {
   h2 {
