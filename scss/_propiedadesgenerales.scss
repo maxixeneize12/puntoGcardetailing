@@ -27,7 +27,7 @@ h3{
     
 body {
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(to bottom, #000000 60%, #ffffff 100%);
+    background: linear-gradient(to bottom, #000000 50%, #ffffff 80%);
     text-decoration: none;
 }
 
@@ -40,4 +40,30 @@ body {
     opacity: 0.5;
     margin: 10px;
     
+}
+
+.banner{
+    font-size: 2.5rem;
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+            &:hover {
+                color: red;
+            }
+        }
+    .institucional{
+       margin-top: 15px;
+       margin-bottom: 10px;
+    }
+    
+    .link-institucional{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .como-comprar{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
 }

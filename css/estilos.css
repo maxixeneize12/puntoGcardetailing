@@ -21,7 +21,7 @@ h3 {
 
 body {
   font-family: 'Oswald', sans-serif;
-  background: linear-gradient(to bottom, #000000 60%, #ffffff 100%);
+  background: linear-gradient(to bottom, #000000 50%, #ffffff 80%);
   text-decoration: none; }
 
 .arriba {
@@ -32,6 +32,24 @@ body {
   justify-content: flex-end;
   opacity: 0.5;
   margin: 10px; }
+
+.banner {
+  font-size: 2.5rem; }
+  .banner a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000; }
+    .banner a:hover {
+      color: red; }
+  .banner .institucional {
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  .banner .link-institucional {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .banner .como-comprar {
+    margin-top: 15px;
+    margin-bottom: 10px; }
 
 .navegador {
   padding-top: 4rem;
@@ -73,7 +91,8 @@ body {
 
 .presentacion2 .txt-presentacion2 {
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+  color: wheat; }
   .presentacion2 .txt-presentacion2 .ingresa {
     text-decoration: none;
     color: #06a006; }
@@ -252,21 +271,23 @@ body {
 .redes-sociales {
   display: flex;
   margin: 10px;
-  font-size: 2.5rem;
-  text-align: center;
-  text-decoration: none; }
+  justify-content: space-evenly; }
+  .redes-sociales .instagram {
+    text-decoration: none;
+    color: black; }
+    .redes-sociales .instagram:hover {
+      color: red; }
+  .redes-sociales .whatsapp {
+    text-decoration: none;
+    color: black; }
+    .redes-sociales .whatsapp:hover {
+      color: red; }
 
-.instagram {
-  text-decoration: none;
-  color: black; }
-  .instagram:hover {
-    color: red; }
-
-.whatsapp {
-  text-decoration: none;
-  color: black; }
-  .whatsapp:hover {
-    color: red; }
+.body-metodos {
+  background: black;
+  color: wheat;
+  font-size: 2rem;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
   h2 {
