@@ -310,6 +310,11 @@ h2 {
       color: red; }
 
 @media screen and (max-width: 768px) {
+  .body-pago-y-condiciones {
+    background: black;
+    color: wheat;
+    font-size: 2rem;
+    text-align: center; }
   h2 {
     font-size: 6rem;
     text-align: center;
@@ -410,6 +415,37 @@ h2 {
     border-radius: 20px;
     display: flex;
     justify-content: center; }
+  .accordion .accordion-button {
+    font-size: 2.5rem;
+    color: black; }
+  .accordion .accordion-body {
+    font-size: 2rem;
+    color: black; }
+  .banner367 {
+    font-size: 2rem; }
+    .banner367 a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: wheat; }
+      .banner367 a:hover {
+        color: red; }
+  .banner {
+    font-size: 2.5rem; }
+    .banner a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #000000; }
+      .banner a:hover {
+        color: red; }
+    .banner .institucional {
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .banner .link-institucional {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+    .banner .como-comprar {
+      margin-top: 15px;
+      margin-bottom: 10px; }
   /*footer*/
   .instagram {
     text-decoration: none;

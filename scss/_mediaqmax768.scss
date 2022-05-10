@@ -1,4 +1,10 @@
 @media screen and (max-width: 768px) {
+    .body-pago-y-condiciones {
+        background: black;
+        color: wheat;
+        font-size: 2rem;
+        text-align: center;
+    }
 
     h2 {
         font-size: 6rem;
@@ -159,6 +165,62 @@
         border-radius: 20px;
         display: flex;
         justify-content: center;
+    }
+
+    .accordion {
+
+        .accordion-button {
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        .accordion-body {
+            font-size: 2rem;
+            color: black;
+        }
+    }
+
+    .banner367 {
+        font-size: 2rem;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: wheat;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .banner {
+        font-size: 2.5rem;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #000000;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        .institucional {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .link-institucional {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .como-comprar {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
     }
 
     /*footer*/
