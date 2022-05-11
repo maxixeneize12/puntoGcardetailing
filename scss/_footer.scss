@@ -1,23 +1,27 @@
 .redes-sociales {
     display: flex;
+    justify-content: center;
     margin: 10px;
-    justify-content: space-evenly;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+}
 
-
-    .instagram {
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: red;
-        }
-
+.instagram {
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    &:hover {
+        color: red;
     }
 
-    .whatsapp {
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: red;
-        }
+}
+
+.whatsapp {
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+    &:hover {
+        color: red;
     }
 }

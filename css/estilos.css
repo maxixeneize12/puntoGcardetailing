@@ -271,7 +271,7 @@ body {
 .redes-sociales {
   display: flex;
   margin: 10px;
-  justify-content: space-evenly; }
+  justify-content: center; }
   .redes-sociales .instagram {
     text-decoration: none;
     color: black; }
